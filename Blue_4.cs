@@ -91,7 +91,7 @@ namespace Lab_6
             //методы
             public void Add(Team team)
             {
-                if (_teams == null || _count == 12) return;
+                if (_teams == null || _count >= 12) return;
                 else
                 {
                     _teams[_count] = team;

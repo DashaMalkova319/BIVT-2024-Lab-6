@@ -64,30 +64,27 @@ namespace Lab_6
                 if (result == null || result.Length != 5) return;
                 int s1 = 0;
                 int s2 = 0;
-                for (int j = 0; j < _marks.GetLength(1); j++)
-                {
-                    s1 += _marks[0, j];
-                    s2 += _marks[1, j];
-                }
                 if (s1 == 0 && s2 == 0) // проверка на заполненность оценками
                 {
                     for (int j = 0; j < _marks.GetLength(1); j++)
                     {
                         _marks[0, j] = result[j];
+                        s1 += result[j];
                     }
                 }
-                if (s2 == 0 && s1 != 0)
+                else if (s2 == 0 && s1 != 0)
                 {
                     for (int j = 0; j < _marks.GetLength(1); j++)
                     {
                         _marks[1, j] = result[j];
+                        s2 += result[j];
                     }
                 }
 
             }
             public static void Sort(Participant[] array)
             {
-                if (array == null || array.Length < 2) return;
+                if (array == null) return;
                 for (int i = 0; i < array.Length; i++)
                 {
                     for (int j = 0; j < array.Length - i - 1; j++)

@@ -40,56 +40,56 @@ namespace Lab_6
             // Blue_2
             // Создаем массив участников
 
-            //Blue_2.Participant[] participants = new Blue_2.Participant[10];
-            //participants[0] = new Blue_2.Participant("Александр", "Петров");
-            //participants[1] = new Blue_2.Participant("Артем", "Луговой");
-            //participants[2] = new Blue_2.Participant("Мария", "Свиридова");
-            //participants[3] = new Blue_2.Participant("Игорь", "Смирнов");
-            //participants[4] = new Blue_2.Participant("Николай", "Зайцев");
-            //participants[5] = new Blue_2.Participant("Инесса", "Кристиан");
-            //participants[6] = new Blue_2.Participant("Марина", "Свиридова");
-            //participants[7] = new Blue_2.Participant("Александр", "Петров");
-            //participants[8] = new Blue_2.Participant("Сергей", "Батов");
-            //participants[9] = new Blue_2.Participant("Александра", "Сидорова");
+            Blue_2.Participant[] participants = new Blue_2.Participant[10];
+            participants[0] = new Blue_2.Participant("Александр", "Петров");
+            participants[1] = new Blue_2.Participant("Артем", "Луговой");
+            participants[2] = new Blue_2.Participant("Мария", "Свиридова");
+            participants[3] = new Blue_2.Participant("Игорь", "Смирнов");
+            participants[4] = new Blue_2.Participant("Николай", "Зайцев");
+            participants[5] = new Blue_2.Participant("Инесса", "Кристиан");
+            participants[6] = new Blue_2.Participant("Марина", "Свиридова");
+            participants[7] = new Blue_2.Participant("Александр", "Петров");
+            participants[8] = new Blue_2.Participant("Сергей", "Батов");
+            participants[9] = new Blue_2.Participant("Александра", "Сидорова");
 
-            //    // Заполняем оценки для прыжков
+            // Заполняем оценки для прыжков
 
-            //participants[0].Jump(new int[] { 11, 0, 8, 7, 12 });
-            //participants[0].Jump(new int[] { 2, 3, 10, 13, 16 });
+            participants[0].Jump(new int[] { 11, 0, 8, 7, 12 });
+            participants[0].Jump(new int[] { 2, 3, 10, 13, 16 });
 
-            //participants[1].Jump(new int[] { 18, 17, 20, 7, 11 });
-            //participants[1].Jump(new int[] { 3, 7, 12, 19, 2 });
+            participants[1].Jump(new int[] { 18, 17, 20, 7, 11 });
+            participants[1].Jump(new int[] { 3, 7, 12, 19, 2 });
 
-            //participants[2].Jump(new int[] { 17, 13, 2, 19, 2 });
-            //participants[2].Jump(new int[] { 10, 0, 0, 6, 5 });
+            participants[2].Jump(new int[] { 17, 13, 2, 19, 2 });
+            participants[2].Jump(new int[] { 10, 0, 0, 6, 5 });
 
-            //participants[3].Jump(new int[] { 15, 7, 14, 19, 15 });
-            //participants[3].Jump(new int[] { 5, 13, 16, 18, 16 });
+            participants[3].Jump(new int[] { 15, 7, 14, 19, 15 });
+            participants[3].Jump(new int[] { 5, 13, 16, 18, 16 });
 
-            //participants[4].Jump(new int[] { 20, 5, 4, 3, 0 });
-            //participants[4].Jump(new int[] { 18, 4, 12, 18, 7 });
+            participants[4].Jump(new int[] { 20, 5, 4, 3, 0 });
+            participants[4].Jump(new int[] { 18, 4, 12, 18, 7 });
 
-            //participants[5].Jump(new int[] { 5, 17, 20, 2, 11 });
-            //participants[5].Jump(new int[] { 10, 18, 9, 7, 12 });
+            participants[5].Jump(new int[] { 5, 17, 20, 2, 11 });
+            participants[5].Jump(new int[] { 10, 18, 9, 7, 12 });
 
-            //participants[6].Jump(new int[] { 18, 1, 10, 5, 20 });
-            //participants[6].Jump(new int[] { 19, 1, 5, 1, 18 });
+            participants[6].Jump(new int[] { 18, 1, 10, 5, 20 });
+            participants[6].Jump(new int[] { 19, 1, 5, 1, 18 });
 
-            //participants[7].Jump(new int[] { 2, 17, 5, 11, 3 });
-            //participants[7].Jump(new int[] { 7, 18, 3, 5, 3 });
+            participants[7].Jump(new int[] { 2, 17, 5, 11, 3 });
+            participants[7].Jump(new int[] { 7, 18, 3, 5, 3 });
 
-            //participants[8].Jump(new int[] { 2, 0, 5, 18, 20 });
-            //participants[8].Jump(new int[] { 3, 12, 4, 2, 10 });
+            participants[8].Jump(new int[] { 2, 0, 5, 18, 20 });
+            participants[8].Jump(new int[] { 3, 12, 4, 2, 10 });
 
-            //participants[9].Jump(new int[] { 12, 2, 17, 5, 7 });
-            //participants[9].Jump(new int[] { 5, 15, 15, 5, 11 });
+            participants[9].Jump(new int[] { 12, 2, 17, 5, 7 });
+            participants[9].Jump(new int[] { 5, 15, 15, 5, 11 });
 
-            //Participant.Sort(participants);
+            Participant.Sort(participants);
 
-            //foreach (var participant in participants)
-            //{
-            //    participant.Print();
-            //}
+            foreach (var participant in participants)
+            {
+                participant.Print();
+            }
 
             //Blue_3
 

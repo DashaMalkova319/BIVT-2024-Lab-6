@@ -30,8 +30,8 @@ namespace Lab_6
             //методы
             public void SetPlace(int place)
             {
-                if (_place > 0) return;
-                _place = place;
+                if (_place == 0 && place >= 1) _place = place;
+
             }
             public void Print()
             {
