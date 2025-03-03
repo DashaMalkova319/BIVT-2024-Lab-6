@@ -71,16 +71,8 @@ namespace Lab_6
 
             //свойства
             public string Name => _name;
-            public Team[] Teams
-            {
-                get
-                {
-                    if (_teams == null) return default(Team[]);
-                    Team[] newTeams = new Team[_teams.Length];
-                    Array.Copy(_teams, newTeams, _teams.Length);
-                    return newTeams;
-                }
-            }
+            public Team[] Teams => _teams;
+            
             //конструктор
             public Group(string name)
             {

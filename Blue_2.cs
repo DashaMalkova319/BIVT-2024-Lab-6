@@ -61,7 +61,7 @@ namespace Lab_6
 
             public void Jump(int[] result)
             {
-                if (result == null || result.Length != 5) return;
+                if (result == null || result.Length <= 5 || _marks == null) return;
                 int s1 = 0;
                 int s2 = 0;
                 if (s1 == 0 && s2 == 0) // проверка на заполненность оценками

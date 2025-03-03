@@ -46,16 +46,8 @@ namespace Lab_6
             private int _count;
             //свойства
             public string Name => _name;
-            public Sportsman[] Sportsmen
-            {
-                get
-                {
-                    if (_sportsmen == null) return default(Sportsman[]);
-                    Sportsman[] newSportsmen = new Sportsman[_sportsmen.Length];
-                    Array.Copy(_sportsmen, newSportsmen, _sportsmen.Length);
-                    return newSportsmen;
-                }
-            }
+            public Sportsman[] Sportsmen => _sportsmen;
+            
             public int SummaryScore
             {
                 get
