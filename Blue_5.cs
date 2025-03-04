@@ -52,16 +52,15 @@ namespace Lab_6
             {
                 get
                 {
-                    //if(_sportsmen == null) return 0;
+                    if(_sportsmen == null) return 0;
                     int sum = 0;
-                    for( int i = 0; i < _sportsmen.Length; i++ )
+                    for( int i = 0; i < _sportsmen.Length; i++)
                     {
                         if (_sportsmen[i].Place == 1) sum += 5;
                         else if(_sportsmen[i].Place == 2) sum += 4;
                         else if (_sportsmen[i].Place == 3) sum += 3;
                         else if (_sportsmen[i].Place == 4) sum += 2;
                         else if (_sportsmen[i].Place == 5) sum += 1;
-                        else break;
                     }
                     return sum;
                 }
