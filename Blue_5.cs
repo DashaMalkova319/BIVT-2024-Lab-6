@@ -52,7 +52,7 @@ namespace Lab_6
             {
                 get
                 {
-                    if(_sportsmen == null) return 0;
+                    //if(_sportsmen == null) return 0;
                     int sum = 0;
                     for( int i = 0; i < _sportsmen.Length; i++ )
                     {
