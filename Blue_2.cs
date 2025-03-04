@@ -15,6 +15,7 @@ namespace Lab_6
             private string _name;
             private string _surname;
             private int[,] _marks;
+            private int _count;
             //свойства
             public string Name => _name;
             public string Surname => _surname;
@@ -57,29 +58,17 @@ namespace Lab_6
                 _name = name;
                 _surname = surname;
                 _marks = new int[2, 5];
+                _count = 0;
             }
 
             public void Jump(int[] result)
             {
-                if (result == null || result.Length <= 5 || _marks == null) return;
-                int s1 = 0;
-                int s2 = 0;
-                if (s1 == 0 && s2 == 0) // проверка на заполненность оценками
+                if (result == null || _marks == null) return;
+                for(int j = 0; j < 5; j++)
                 {
-                    for (int j = 0; j < _marks.GetLength(1); j++)
-                    {
-                        _marks[0, j] = result[j];
-                        s1 += result[j];
-                    }
+                    _marks[_count, j] = result[j];
                 }
-                else if (s2 == 0 && s1 != 0)
-                {
-                    for (int j = 0; j < _marks.GetLength(1); j++)
-                    {
-                        _marks[1, j] = result[j];
-                        s2 += result[j];
-                    }
-                }
+                _count++;
 
             }
             public static void Sort(Participant[] array)
